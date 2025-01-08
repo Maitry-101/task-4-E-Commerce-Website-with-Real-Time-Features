@@ -1,44 +1,34 @@
-# Anon - An eCommerce Website
+# lebaba-ecommerce-starter-files
+![lebaba-ecommerce-starter-files](/src/assets/github-cover.png)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/anon-ecommerce-website)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/anon-ecommerce-website?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/anon-ecommerce-website?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/3l8Lob4ysI0?style=social)](https://youtu.be/3l8Lob4ysI0)
+## How to run this project:
 
-Anon is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
+### For Frontend 
+Follow the below steps to run the project: 
+- Firstly clone or unzip the project folder.
+* Go to the frontend directory by using the following command ``` cd frontend ```.
++ Then run `` npm install `` commend to install node dependencies.
+- Finally, to run the project, use ``npm run dev`` command.
 
-## Demo
 
-![Anon Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![Anon Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+### For Backend
+Follow the below steps to run the project: 
+- Firstly clone or unzip the project folder.
+* Go to the backend directory by using the following command ``` cd backend```.
++ Then run `` npm install `` commend to install node dependencies.
+* create a **.env** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there: 
+```
+MONGODB_URL = 'mongodb+srv://mdalmamunit427:RhkUPYwpWwzzX8If@lebaba-ecommerce.qgsnv.mongodb.net/lebaba-ecommerce?retryWrites=true&w=majority&appName=lebaba-ecommerce'
 
-## Prerequisites
+JWT_SECRET_KEY = "4b74bc201ddfc036db3f2cf8171565a306dffa7caef5074ea9429ddf7532522722e8a36f699945d34e605b34f9a33d89f00084197e3564a8ba6a948e6c2ad1ce"
 
-Before you begin, ensure you have met the following requirements:
+STRIPE_SECRET_KEY="sk_test_51Po3X5LV8UbWx9Ij1HIwJYniRLps8gZmfOFXrBcwQk1BH204TvdKiV4U0odayxpetPKNfxyGz0nacOLMTQobNg0H00bxcsoqEY"
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+CLOUDINARY_CLOUD_NAME="dn2gccqlw"
+CLOUDINARY_API_KEY="791369242134249"
+CLOUDINARY_API_SECRET="zH4Ix2R_WM-DWG_Vr3ZAECUPlmE"
 
-## Installing Anon
-
-To install **Anon**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/anon-ecommerce-website.git
+Note: Please setup mongodb and change the MongoDB url and set your jwt secret key above.
 ```
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/anon-ecommerce-website.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-This project is **free to use** and does not contains any license.
+- Finally, to run the project, use ``npm run start:dev`` command.
